@@ -36,7 +36,23 @@ namespace XD___2023 {
             }
         }
 
+        public Vehicle(string nameName, string colorName, int yearValue, int maxSpeedValue) {
+            name = nameName;
+            color = colorName;
+            year = yearValue;
+            maxSpeed = maxSpeedValue;
+        }
 
+        public Vehicle(string nameName, string colorName, int yearValue, int maxSpeedValue, string eng_type) {
+            name = nameName;
+            color = colorName;
+            year = yearValue;
+            maxSpeed = maxSpeedValue;
+            engine_type = eng_type;
+        }
+        public Vehicle(string nameName) {
+            name = nameName;
+        }
         public void honk()             // Vehicle method 
         {
             Console.WriteLine("Tuut, tuut!");
