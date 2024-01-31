@@ -39,23 +39,15 @@ namespace XD___2023 {
         //}
 
         //Constructors
-        public Vehicle(string nameName, string colorName, int yearValue, int maxSpeedValue) 
-            {
-            name = nameName;
-            color= colorName;
-            year= yearValue;
-            maxSpeed= maxSpeedValue;
+        public Car(string nameName, string colorName, int yearValue, int maxSpeedValue,int carSeatsNo) : base(nameName, colorName, yearValue, maxSpeedValue){ 
+            carSeats = carSeatsNo;
         }
 
-        public Vehicle(string nameName, string colorName, int yearValue, int maxSpeedValue, string eng_type) {
-            name = nameName;
-            color = colorName;
-            year = yearValue;
-            maxSpeed = maxSpeedValue;
-            engine_type = eng_type;
+        public Car(string nameName, string colorName, int yearValue, int maxSpeedValue, string eng_type, int carSeatsNo) : base(nameName, colorName, yearValue, maxSpeedValue, eng_type) {
+            carSeats = carSeatsNo;
         }
-        public Car(string nameName) {
-            name = nameName; 
+        public Car(string nameName, int carSeatsNo) : base (nameName){
+            carSeats = carSeatsNo;
         }
         public void fullThrottle() {
             Console.WriteLine(name + " is going at the speed of " + maxSpeed);

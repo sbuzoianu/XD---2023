@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace XD___2023 {
     class Program {
         static void Main(string[] args) {
-            Car Ford = new Car("Mustang", "white", 2021, 100);
-            Car Opel = new Car("Astra", "blue", 2020, 120, "electric");
-            Car Volvo = new Car("XC-90");
+            Car Ford = new Car("Mustang", "white", 2021, 100,5);
+            Car Opel = new Car("Astra", "blue", 2020, 120, "electric", 4);
+            Car Volvo = new Car(nameName: "XC-90", carSeatsNo: 4);
             
             Console.WriteLine(Ford.Name);
             Console.WriteLine(Ford.Color);
